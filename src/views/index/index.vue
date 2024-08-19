@@ -1,6 +1,6 @@
 <template>
   <div ref="a">
-    <el-button>123412</el-button>
+    <el-button>1234121111111111</el-button>
   </div>
   <test></test>
 </template>
