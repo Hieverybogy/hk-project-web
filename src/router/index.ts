@@ -19,6 +19,12 @@ const router = createRouter({
           meta: {},
           component: () => import("../views/index/index.vue"),
         },
+        {
+          path: "/aaa",
+          name: "aaa",
+          meta: {},
+          component: () => import("../views/index/aaa.vue"),
+        },
       ],
     },
   ],
