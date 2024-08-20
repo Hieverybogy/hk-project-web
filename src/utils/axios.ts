@@ -34,7 +34,7 @@ const instance = axios.create({
 });
 
 instance.interceptors.request.use(
-  (config) => {
+  (config: any, showLoading?: boolean) => {
     if (config.showLoading) loadingStart();
 
     if (getToken()) {
@@ -49,7 +49,7 @@ instance.interceptors.request.use(
 );
 
 instance.interceptors.response.use(
-  (res) => {
+  (res: any) => {
     loadingEnd();
     const data = res.data;
     const code = res.status;

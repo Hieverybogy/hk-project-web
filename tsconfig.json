@@ -23,6 +23,7 @@
     "resolveJsonModule": true,
     "useDefineForClassFields": true
   },
+  "files": ["./typings/index.d.ts"],
   "include": [
     "env.d.ts",
     "src/**/*.ts",
