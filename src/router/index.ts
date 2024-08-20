@@ -26,6 +26,14 @@ export const constantRouterMap = [
     },
     component: () => import("../views/signaturePad/index.vue"),
   },
+  {
+    path: "/qrCode",
+    name: "qrCode",
+    meta: {
+      title: '二维码',
+    },
+    component: () => import("../views/qrCode/index.vue"),
+  },
 ]
 
 const router = createRouter({
