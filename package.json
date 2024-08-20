@@ -25,7 +25,6 @@
     "@babel/preset-env": "^7.24.4",
     "@rushstack/eslint-patch": "^1.8.0",
     "@tsconfig/node20": "^20.1.4",
-    "@types/antd": "^1.0.0",
     "@types/node": "^20.12.5",
     "@types/three": "^0.167.1",
     "@vitejs/plugin-vue": "^5.0.4",
