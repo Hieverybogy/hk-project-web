@@ -1,6 +1,33 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Layout from "@/layout/index.vue";
 
+export const constantRouterMap = [
+  {
+    path: "/home/index",
+    name: "home",
+    meta: {
+      title: '首页',
+    },
+    component: () => import("../views/index/index.vue"),
+  },
+  {
+    path: "/aaa",
+    name: "aaa",
+    meta: {
+      title: 'three.js',
+    },
+    component: () => import("../views/index/aaa.vue"),
+  }, 
+  {
+    path: "/signaturePad",
+    name: "signaturePad",
+    meta: {
+      title: '生成签名图片',
+    },
+    component: () => import("../views/signaturePad/index.vue"),
+  },
+]
+
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
@@ -9,24 +36,11 @@ const router = createRouter({
       redirect: "/home/index",
     },
     {
-      path: "/home",
+      path: '/layout',
       name: "layout",
       component: Layout,
-      children: [
-        {
-          path: "/home/index",
-          name: "home",
-          meta: {},
-          component: () => import("../views/index/index.vue"),
-        },
-        {
-          path: "/aaa",
-          name: "aaa",
-          meta: {},
-          component: () => import("../views/index/aaa.vue"),
-        },
-      ],
-    },
+      children: constantRouterMap
+    }
   ],
 });
 
