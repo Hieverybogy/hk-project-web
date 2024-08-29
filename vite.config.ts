@@ -34,6 +34,11 @@ export default defineConfig({
     open: true, // 设置服务启动时是否自动打开浏览器
     proxy: {
       // '/api': 'http://localhost:8000',
+      '/aaa': {
+        target: 'http://localhost:7001',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(new RegExp(`^/aaa`), ''),
+      },
     },
   },
 });

@@ -34,6 +34,14 @@ export const constantRouterMap = [
     },
     component: () => import("../views/qrCode/index.vue"),
   },
+  {
+    path: "/fileList",
+    name: "fileList",
+    meta: {
+      title: '文件上传列表',
+    },
+    component: () => import("../views/fileList/index.vue"),
+  },
 ]
 
 const router = createRouter({
