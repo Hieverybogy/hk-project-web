@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite --mode base",
-    "build": "pnpm vite build --mode dev",
-    "build:pro": "pnpm vite build --mode pro",
+    "build": "vite build --mode dev",
+    "build:pro": "vite build --mode pro",
     "preview": "vite preview",
     "build-check": "run-p type-check \"build-only {@}\" --",
     "build-only": "vite build",
