@@ -6,7 +6,7 @@ import { ElMessage } from 'element-plus'
 import { REQUEST_TIMEOUT } from '@/constants'
 import { showLoading, hideLoading } from './loading'
 
-export const PATH_URL = ''
+export const PATH_URL = import.meta.env.VITE_API_PROXY_PRVE
 const abortControllerMap: Map<string, AbortController> = new Map()
 
 const axiosInstance: AxiosInstance = axios.create({
