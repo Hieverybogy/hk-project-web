@@ -285,7 +285,7 @@ const upload = (file, uploadFiles) => {
     method: "post",
     url: url,
     data: formdata,
-    timeout: +20000,
+    timeout: +60000*5,
     // headers: {
     //     "Content-Type": "multipart/form-data"
     // },
