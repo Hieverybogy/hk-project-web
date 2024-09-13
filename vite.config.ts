@@ -35,6 +35,7 @@ export default defineConfig({
     proxy: {
       // '/api': 'http://localhost:8000',
       '/aaa': {
+        // target: 'http://localhost:7001',
         target: 'http://47.113.228.135:7001',
         changeOrigin: true,
         rewrite: (path) => path.replace(new RegExp(`^/aaa`), ''),
